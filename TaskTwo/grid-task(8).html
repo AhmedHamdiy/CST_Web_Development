@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid items</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <!-- 1. TODO(optional): change img, header and text -->
+            <img src="C:\Users\Dell Inc\Downloads\programmer.png" alt="Programming" width="100%" height="100%">
+            <h3 align ="center">Grid-Test</h3>
+            <p>Let's learn how to use grid in css.</p>
+        </div>
+        
+        <!-- 2. TODO : Copy grid item and paste it 5 or more times  -->
+
+        <div class="grid-item">
+            <!-- 1. TODO(optional): change img, header and text -->
+            <img src="C:\Users\Dell Inc\Downloads\programmer.png" alt="Programming" width="100%" height="100%">
+            <h3 align ="center">Grid-Test</h3>
+            <p>Let's learn how to use grid in css.</p>
+        </div>
+        
+        <div class="grid-item">
+            <!-- 1. TODO(optional): change img, header and text -->
+            <img src="C:\Users\Dell Inc\Downloads\programmer.png" alt="Programming" width="100%" height="100%">
+            <h3 align ="center">Grid-Test</h3>
+            <p>Let's learn how to use grid in css.</p>
+        </div>
+        
+        <div class="grid-item">
+            <!-- 1. TODO(optional): change img, header and text -->
+            <img src="C:\Users\Dell Inc\Downloads\programmer.png" alt="Programming" width="100%" height="100%">
+            <h3 align ="center">Grid-Test</h3>
+            <p>Let's learn how to use grid in css.</p>
+        </div>
+        
+        <div class="grid-item">
+            <!-- 1. TODO(optional): change img, header and text -->
+            <img src="C:\Users\Dell Inc\Downloads\programmer.png" alt="Programming" width="100%" height="100%">
+            <h3 align ="center">Grid-Test</h3>
+            <p>Let's learn how to use grid in css.</p>
+        </div>
+        
+        <div class="grid-item">
+            <!-- 1. TODO(optional): change img, header and text -->
+            <img src="C:\Users\Dell Inc\Downloads\programmer.png" alt="Programming" width="100%" height="100%">
+            <h3 align ="center">Grid-Test</h3>
+            <p>Let's learn how to use grid in css.</p>
+        </div>
+        
+    </div>
+</body>
+<style>
+
+    body {
+        font-family: Poppins;
+        font-size: 24px;
+    }
+
+    /* grid items  */
+
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        /* 3. TODO : Add border radius property to make it round */
+        border-radius: 10px;
+        padding: 20px;
+        font-size: 30px;
+        /* 4. TODO : Add text-align property to center align the text */
+        text-align: center;
+    }
+
+    .grid-container {
+        display: grid;
+
+        /* 5. TODO : Add grid-template-columns property with 3 or more columns of equal width */
+        grid-template-columns: repeat(3,1fr);
+        /* 6. TODO : Add different grid gaps for horizontal and vertical dimensions */
+        gap: 15px 20px;
+        padding: 10px;
+    }
+    
+    
+    .grid-item:nth-child(even) {
+        /* 7. TODO : Add background color to black and color to white( for even cells ) */
+        background-color: #000;
+        color: #fff;
+    }
+    
+    .grid-item:hover {
+        background-color: rgba(23, 21, 166, 0.8);
+        color: white;
+    }
+
+    @media screen and (max-width: 600px) {
+        .grid-container {
+            /* 8. TODO : Add grid-template-columns property to make it 2 columns only of equal size */
+            grid-template-columns:repeat(2,50%);
+        }
+    }
+        
+
+</style>
+</html>

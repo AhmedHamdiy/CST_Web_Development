@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sign Form</title>
+</head>
+<body>
+    <h2>Signup Form</h2>
+    <form action="test.php">
+        <div class="signup">
+            <div id="first-section">
+                <!-- 1. TODO : Add required to all the inputs -->
+                <div class="flex-input-block" >
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                    <!-- 2. TODO : Add a label and input for the email and phone number -->
+                   
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+                   
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Enter your phone number :" required>
+                </div>
+
+                <div class="flex-input-block">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city" placeholder="Enter your city" required>
+                    <!-- 3. TODO : Add a label and input for the password and confirm password -->
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                    
+                    <label for="confirm-password">Confirm password</label>
+                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm your password" required>
+                </div>
+            </div>
+            <div class="second-section" >
+                <button class="submit" type="submit" name="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+<style>
+    body {
+        font-family: Poppins;
+        font-size: 24px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+    
+
+    /* signup form  */
+
+    .signup {
+        display: flex;
+        flex-direction: column;
+        /* 4. TODO : set justify-content and align-items to center to center the sign up section */
+        justify-content: center;
+        align-items: center;
+        /* 5. TODO : set gap for spacing between the sections (form and button) */
+        gap: 10px;
+    }
+
+    .signup label {
+        font-size: 20px;
+    }
+
+    /* first section */
+
+    .signup #first-section {
+        display: flex;
+        flex-direction: row;
+        /* 6. TODO : set the flex-wrap for responsive design */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* flex item group */
+
+    .flex-input-block {
+        /* 7. TODO : set display to flex and set the direction to column */
+        display: flex;
+        flex-direction: column;
+        /* 8. TODO : set gap if needed */
+    }
+
+    .signup input ,
+    .submit {
+        padding: 10px;
+        border-radius: 5px;
+        /* 9. TODO : set border to 1px thick and set the color to #ccc */
+        border: 1px thick #CCC;
+    }
+
+    /* second section which is the submit button */
+
+    .submit {
+        background-color: #111;
+        color: white;
+        font-size: 15px;
+        /* 10. TODO : set cursor to pointer */
+        cursor: pointer;
+    }
+
+
+    .submit:hover {
+        /* 11. TODO : set background color to blue and use transform (for ex. : scale) */
+        background-color: blue;
+        transform: scale(1.2);
+    }
+
+</style>
+</html>
