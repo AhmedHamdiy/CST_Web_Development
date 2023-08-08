@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>navbar</title>
+</head>
+<body>
+    <nav class="navbar">
+        
+        <div id="logo" >
+            <!-- 1. TODO (optional) : change logo here -->
+            <img src="https://www.sportcal.com/wp-content/uploads/sites/32/2022/06/main62a8569966a16.jpg" alt="W3Schools.com" width="100" height="50">
+        </div>
+
+
+        <ul id="left-content">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <!-- 2. TODO Add About and Contact List items-->
+        </ul>
+
+
+        <div class="search-navbar" >
+            <!-- 3. TODO add action to form to send data to google.com  -->
+                <form action="https://www.google.com/" method ="get">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="submit">🔎</button>
+                </form>
+        </div>
+        
+        <ul id="right-content">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign Up</a></li>
+        </ul>
+
+    </nav>
+
+
+</body>
+
+<style>
+    body {
+        font-family: Poppins;
+        font-size: 24px;
+    }
+    
+    ul {
+        /* 4. TODO: change list type to remove bullet point */
+    list-style-type:none ;
+    }
+
+    /*  Navbar */
+    
+    .navbar {
+        
+        background-color: #111;
+        padding: 20px;
+
+        /* 5. TODO Make navbar flex and set flex direction and flex wrap it to be responsive */
+
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* 6. TODO Make navbar stick (Hint: set top to 0) */
+        position: sticky;
+        top: 0;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    .navbar a:hover {
+        /* 7. TODO : change color to aqua on hover */
+        color: aqua;
+    }
+
+    /* left content */
+
+
+    .navbar #left-content {
+        display: flex;
+        justify-content: space-between;
+        /* 8. TODO : Set width to 30% without using width property */
+        flex-wrap: wrap;
+        flex: 0 0 30%;
+    }
+
+    
+    /* search bar */
+
+
+    .navbar  .search-navbar input[type=text] {
+        /* 9. TODO : Match the padding of the button  */
+        margin-top: 8px;
+        font-size: 17px;
+        border: none;
+        padding: 8px 5px 6px;
+    }
+
+    .navbar .search-navbar button {
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-left: -10px;
+        background: #ccc;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    /* right content */
+
+    .navbar #right-content {
+        display: flex;
+        /* 10. TODO : set justify content to flex-end */
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+    .navbar #right-content a {
+        margin-left: 20px;
+    }
+
+    @media screen and (max-width: 1050px) {
+        .search-navbar {
+            /* 11. TODO : Make the search bar disappear( Hint: may need to use !important) */
+            visibility: hidden !important;
+        }
+    }
+
+
+</style>
+</html>
