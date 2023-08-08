@@ -1,0 +1,16 @@
+#img1 {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#submitbutton {
+    background-color: orangered;
+    color: white;
+    border-radius: 10px;
+}
+span.info {
+    display: block;
+    padding: 5px;
+  }
